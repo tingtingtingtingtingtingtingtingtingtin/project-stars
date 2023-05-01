@@ -1,5 +1,5 @@
-IdolGame/game/cache/
-IdolGame/game/saves/
+IdolGame\game\cache\
+IdolGame\game\saves\
 
 *.com
 *.class
@@ -9,6 +9,7 @@ IdolGame/game/saves/
 *.save
 *.rpyc
 *.rpymc
-IdolGame/errors.txt
+IdolGame\errors.txt
+IdolGame\log.txt
+IdolGame\traceback.txt
 IdolGame/log.txt
-IdolGame/traceback.txt
