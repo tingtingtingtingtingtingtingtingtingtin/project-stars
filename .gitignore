@@ -1,0 +1,6 @@
+
+*.save
+IdolGame/IdolGameDemo/errors.txt
+IdolGame/IdolGameDemo/log.txt
+IdolGame/IdolGameDemo/traceback.txt
+IdolGame/IdolGameDemo/game/saves/persistent
