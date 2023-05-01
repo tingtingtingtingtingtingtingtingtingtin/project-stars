@@ -1,6 +1,14 @@
+IdolGame/game/cache/
+IdolGame/game/saves/
 
+*.com
+*.class
+*.ddl
+*.o
+*.so
 *.save
-IdolGame/IdolGameDemo/errors.txt
-IdolGame/IdolGameDemo/log.txt
-IdolGame/IdolGameDemo/traceback.txt
-IdolGame/IdolGameDemo/game/saves/persistent
+*.rpyc
+*.rpymc
+IdolGame/errors.txt
+IdolGame/log.txt
+IdolGame/traceback.txt
