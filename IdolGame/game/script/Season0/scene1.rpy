@@ -27,7 +27,7 @@ label s0s1:
     if player_name == "":
         $ player_name = default_name
 
-    mc "That's right, my name is [player_name]... and I'm an idol."
+    mc "That's right, my name is [player_name]... and I've always longed of becoming an idol."
 
     "\"[player_name]!\" {w} \"[player_name]!\" {w} \"[player_name]!\""
 
