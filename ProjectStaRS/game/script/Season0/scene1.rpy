@@ -44,7 +44,7 @@ label s0s1:
     scene bg dundee with vpunch
     show haruka happy with dissolve
 
-    mc "{size=+5} UWAH! Crap, I'm gonna be late for my bus! {/size}"
+    mc "{size=+5} UWAH! Crap, I'm gonna be late for my train! {/size}"
 
     mc "Coming, Mom...!"
 
