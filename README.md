@@ -1,1 +1,2 @@
-# idol-game
+# ✨ Project StaRS ✨   
+
