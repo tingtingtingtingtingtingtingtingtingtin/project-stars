@@ -1,6 +1,6 @@
 # Season 0 Scene 1: Waking Up
 
-label s0s1:
+label s0s0:
     mc "The night sky."
     mc "The giant expanse of the concert hall, a ceiling that stretches on for eternity."
     mc "A never ending void. {w} A maze without walls."
