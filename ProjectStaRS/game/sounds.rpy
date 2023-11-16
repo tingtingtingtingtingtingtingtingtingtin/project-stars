@@ -1,0 +1,1 @@
+define audio.knocking = "audio/knocking.wav"
