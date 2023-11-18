@@ -1,5 +1,5 @@
-ProjectStaRS\game\cache\
-ProjectStaRS\game\saves\
+ProjectStaRS/game\cache/
+ProjectStaRS/game\saves/
 
 *.com
 *.class
@@ -9,8 +9,9 @@ ProjectStaRS\game\saves\
 *.save
 *.rpyc
 *.rpymc
-ProjectStaRS\errors.txt
-ProjectStaRS\log.txt
-ProjectStaRS\traceback.txt
-ProjectStaRS\log.txt
 ProjectStaRS/errors.txt
+ProjectStaRS/log.txt
+ProjectStaRS/traceback.txt
+ProjectStaRS/log.txt
+ProjectStaRS/errors.txt
+ProjectStaRS/game/saves/persistent
