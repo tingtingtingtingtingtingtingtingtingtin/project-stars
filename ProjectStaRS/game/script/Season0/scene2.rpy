@@ -2,6 +2,7 @@
 
 label s0s2:
     scene bg stage with fade
+    play music starbound2
     n "Seika!"
     "Something about the crowd draws me to the makeshift stage."
     "I think I hear a call of my name, but it sounds so distant I'm not sure if I'm imagining it or not."
