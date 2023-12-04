@@ -53,7 +53,8 @@ label s0s2:
     with moveinleft
     show m at right
     with move
-    unknown "?!{w} What the hell are you doing up here?"
+    unknown "?!"
+    unknown "What the hell are you doing up here?"
     unknown  "H-hey, watch the equipment!"
     "I realize I've stepped on stage without thinking."
     s "Ah! I'm sorry!"
