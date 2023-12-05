@@ -84,11 +84,13 @@ label s0s5:
     "Before I can speak, the voice on the other side starts."
 
     #[???] #[Phone sprite and BG disappear, black BG] #[Music stops]
-    unknown "Is this Seika?"
+    $ t_name = "Serious Voice"
+    t "Is this Seika?"
 
     #[Seika]
     s "Y… Yes! That's me."
 
+    $ t_name = "Tsuki"
     #[Tsuki]
     t "This is Tsuki."
 
@@ -103,7 +105,9 @@ label s0s5:
     s "T-T-That's great news! I look forward to getting started, um…! Thank you so so much! When do I… do we work?"
 
     #[Tsuki]
-    t "Don't thank me yet. Your audition showed us your potential, but that doesn't guarantee your debut. The rest is still up to you. Our training regimen is strict – will you be able to keep up?"
+    t "Don't thank me yet. Your audition showed us your potential, but that doesn't guarantee your debut. The rest is still up to you." 
+    
+    t "Our training regimen is strict. Will you be able to keep up?"
 
     #[Seika]
     s "Y-Yes! If that's what it takes, then I’ll do anything!"
@@ -117,12 +121,14 @@ label s0s5:
     t "You'll be expected to work like you've never worked before, to show up to practice rain or shine."
     
     t "You'll have to endure at all costs, to keep smiling in the face of hardship."
-    
-    t "That is the mark of an idol." 
 
     t "If you falter for even a moment, then you can kiss your career – your entire life – goodbye."
+
+    t "That is what it means to be an idol."
     
-    t "Horizon Production shares little sympathy to those who don’t give it their all, even if it saps everything from you. Take it from my experience."
+    t "Horizon Production shares little sympathy to those who don’t give it their all, even if it saps everything from you."
+    
+    t "Take it from my experience."
 
     #[Seika]
     s "I…"
@@ -136,16 +142,15 @@ label s0s5:
 
     #[Player choice:]
     menu:
+        "I need to choose wisely."
         "Accept her terms":
             pass
         "Back out":
             call s0end
             return
-   
-    "I need to choose wisely."
 
     #[-]
-    "Her words were scary, but I couldn't back out now and let my efforts go to waste. Gather yourself, Seika!"
+    "As nervous as I was, I couldn't back out now and let my efforts go to waste. Gather yourself, Seika!"
 
     #[Seika]
     s "... I understand. I'll do it."
@@ -165,9 +170,13 @@ label s0s5:
     s "Goodbye, Producer!"
 
     #[Tsuki]
-    t "Tsuki is fine."
+    t "Tsuki is fine. We'll be working closely from here on out."
+    
+    t "I'm expecting nothing but the best from you, so show up for orientation on time and prepared."
 
     t "... Oh, and one more thing."
+
+    s "Hm?"
 
     t "You did well, Seika."
 
@@ -175,8 +184,10 @@ label s0s5:
 
     t "... Goodbye."
 
-    #[-]
-    "Tsuki hangs up. I'm confused by her parting words, but I think I made a strong impression, at least."
+    #[Beeping noise]
+    "Tsuki hangs up."
+    
+    "I'm confused by her parting words, but I think I made a strong impression, at least."
 
     "I lay back in bed, recounting our conversation." 
 

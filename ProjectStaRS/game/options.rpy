@@ -48,7 +48,7 @@ define build.name = "IdolGameDemo"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## To allow the user to play a test sound on the sound or voice channel,
@@ -75,6 +75,7 @@ define config.main_menu_music = "title16.wav"
 
 define config.enter_transition = dissolve
 define config.exit_transition = dissolve
+define config.skip_delay = 40
 
 
 ## Between screens of the game menu.
