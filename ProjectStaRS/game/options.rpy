@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("IdolGameDemo")
+define config.name = _("Project StaRS")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -75,6 +75,8 @@ define config.main_menu_music = "title16.wav"
 
 define config.enter_transition = dissolve
 define config.exit_transition = dissolve
+
+## Default skip delay
 define config.skip_delay = 40
 
 
@@ -85,12 +87,15 @@ define config.intra_transition = dissolve
 
 ## A transition that is used after a game has been loaded.
 
-define config.after_load_transition = None
+define config.after_load_transition = dissolve
 
 
 ## Used when entering the main menu after the game has ended.
 
-define config.end_game_transition = None
+define config.end_game_transition = dissolve
+
+## Used when entering the main menu from the splashscreen.
+define config.end_splash_transition = dissolve
 
 
 ## A variable to set the transition used when the game starts does not exist.
@@ -144,7 +149,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "IdolGameDemo-1682816895"
+define config.save_directory = "ProjectStaRS"
 
 
 ## Icon ########################################################################

@@ -2,9 +2,13 @@ label s0s5:
 
     "These last few days, the audition was the only thing on my mind. The day immediately after, I could hardly catch a wink of sleep waiting for that phone call."
 
-    "And yet, a week had passed with no sign of a response. Had I been rejected already? Even worse, what if they forgot about me? Was my performance just that unmemorable?"
+    "And yet, a week had passed with no sign of a response. Had I been rejected already?"
+    
+    "Even worse, what if they forgot about me? Was my performance just that unmemorable?"
 
-    "No, that can't be it. Natsuha said it was superb. Her opinion is invaluable to me, so I have to trust her judgment. Ah, but the other girls did so well too…"
+    "No, that can't be it. Natsuha said it was superb. Her opinion is invaluable to me, so I have to trust her judgment."
+    
+    "Ah, but the other girls did so well...!"
 
     "Speaking of Natsuha, did she get a response yet? Should I call her?"
 
@@ -24,6 +28,7 @@ label s0s5:
     s "That's alright, thank you for the opportunity!"
 
     #[Seika's Phone] #[Ringing SFX] #[Phone sprite] #[Music stops, silence]
+    with hpunch
     phone "Bzz! Bzz! Bzz!"
 
     #[Seika]
@@ -38,7 +43,7 @@ label s0s5:
     s "H-Hello? This is Seika, from the audition…"
 
     #[-]
-    "My heart is hammering in my chest. Time slows to a crawl, and it feels like forever before I finally hear a voice. The voice that will determine my fate."
+    "My heart is hammering in my chest. Time slows to a crawl, and it feels like forever before I finally hear a voice."
 
     "..."
 
@@ -60,12 +65,14 @@ label s0s5:
 
     "... I've got it! I'll treat her to a meal with my allowance and ask her about her results there."
 
-    "\"Natsu! When… are… you… free?\""
+    "\"Nacchan! When… are… you… free?\""
     
     #[Seika's Phone] #[Buzzing SFX] #[Music stops again]
+    with hpunch
     phone "Bzz! Bzz! Bzz!"
 
     #[Seika] #[Screen shaking, dropping SFX] #[Phone sprite disappears]
+    with vpunch
     s "AH!!!!"
 
     #[-]
@@ -79,9 +86,7 @@ label s0s5:
 
     "But that isn't what surprises me, it's the name on the caller screen – Horizon Productions."
 
-    "I answer without hesitation."
-
-    "Before I can speak, the voice on the other side starts."
+    "I answer quickly, but before I can speak, the voice on the other side starts."
 
     #[???] #[Phone sprite and BG disappear, black BG] #[Music stops]
     $ t_name = "Serious Voice"
@@ -92,9 +97,8 @@ label s0s5:
 
     $ t_name = "Tsuki"
     #[Tsuki]
-    t "This is Tsuki."
-
-    t "I'm calling on behalf of Horizon Productions to inform you that you passed the auditions, and have been selected to be a part of our trainee program."
+    t "This is Tsuki, calling on behalf of Horizon Productions."
+    t "You passed the auditions, and have been selected to be a part of our trainee program."
 
     #[-]
     "My voice catches in my throat. I've been preparing nonstop for this moment, yet I still can't believe it." 

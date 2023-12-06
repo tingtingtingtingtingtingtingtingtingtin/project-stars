@@ -12,7 +12,7 @@ label s0s1:
 
     "And then there's me."
 
-    "I've made a full nineteen laps around the Sun. {w}I've experienced my heartfelt graduation.{w} I've watched my childhood come and go."
+    "I've made a full nineteen laps around the Sun. I've experienced my heartfelt graduation. I've watched my childhood come and go."
 
     "For me, adulthood is just beginning. By now, my direction should be clear. My path should be paved for me."
 
@@ -30,9 +30,9 @@ label s0s1:
 
     "Some people grow up knowing exactly what they want to do with their lives. Some inherit a family business, others have their entire life figured out before entering college."
 
-    "But… growing up, I didn't have a set path. Mom made sure that I would always have a choice. She'd never force me to do anything I didn't want to."
-
-    "I'm forever grateful for that, and yet…"
+    "But… growing up, I didn't have a set path."
+    
+    "Mom made sure that I would always have a choice. She'd never force me to do anything I didn't want to. I'm forever grateful for that, and yet…"
 
     "I'm lost."
 
@@ -53,13 +53,11 @@ label s0s1:
     "From the moment I was born, I was–"
 
     unknown "{size=*1.5}Seika!{/size}"
+    with vpunch
     
-    window show
-    scene bg cafe with vpunch
+    scene bg cafe
     show natsuha pout at l
-    with dissolve
     show seika shock at r
-    with dissolve
     define n_name = "Fashionable Girl"
     s "Wah!"
     "I see my friend, who's nearly climbed over the table, her face just under a foot away from mine."

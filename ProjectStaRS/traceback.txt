@@ -4,10 +4,10 @@ While running game code:
   File "game/script.rpy", line 3, in script call
     call s0
   File "game/script/Season0/season0.rpy", line 6, in script call
-    call s0s5
-  File "game/script/Season0/s0s5.rpy", line 47, in script
-    unknwon "You have only 2 hours, and time is ticking, so hurry! To claim your prize, simply tell us your name and credit card information after the beep! Terms and conditions apply!"
-Exception: Sayer 'unknwon' is not defined.
+    call s0s3
+  File "game/script/Season0/s0s3.rpy", line 75, in script
+    with Pause()
+TypeError: __init__() missing 1 required positional argument: 'delay'
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -15,16 +15,24 @@ Full traceback:
   File "game/script.rpy", line 3, in script call
     call s0
   File "game/script/Season0/season0.rpy", line 6, in script call
-    call s0s5
-  File "game/script/Season0/s0s5.rpy", line 47, in script
-    unknwon "You have only 2 hours, and time is ticking, so hurry! To claim your prize, simply tell us your name and credit card information after the beep! Terms and conditions apply!"
-  File "C:\Users\Tingxuan\Downloads\renpy-8.0.3-sdk\renpy\ast.py", line 890, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\Tingxuan\Downloads\renpy-8.0.3-sdk\renpy\ast.py", line 783, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'unknwon' is not defined.
+    call s0s3
+  File "game/script/Season0/s0s3.rpy", line 75, in script
+    with Pause()
+  File "C:\Users\Tingxuan\Downloads\renpy-8.0.3-sdk\renpy\ast.py", line 1678, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "C:\Users\Tingxuan\Downloads\renpy-8.0.3-sdk\renpy\exports.py", line 1758, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\Tingxuan\Downloads\renpy-8.0.3-sdk\renpy\display\core.py", line 2978, in do_with
+    return self.interact(trans_pause=True,
+  File "C:\Users\Tingxuan\Downloads\renpy-8.0.3-sdk\renpy\display\core.py", line 3582, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Tingxuan\Downloads\renpy-8.0.3-sdk\renpy\display\core.py", line 3976, in interact_core
+    trans = instantiate_transition(None, old_root, layers_root)
+  File "C:\Users\Tingxuan\Downloads\renpy-8.0.3-sdk\renpy\display\core.py", line 3922, in instantiate_transition
+    trans = self.ongoing_transition[layer](
+TypeError: __init__() missing 1 required positional argument: 'delay'
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
-IdolGameDemo 1.0
-Tue Nov 28 17:16:20 2023
+Project StaRS 1.0
+Tue Dec  5 17:20:09 2023

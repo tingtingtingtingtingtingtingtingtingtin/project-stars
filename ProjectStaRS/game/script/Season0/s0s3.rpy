@@ -1,7 +1,11 @@
 label s0s3:
     # [Scene opens up in the entrance of Seika's home]
+    window hide
+    window show
+    scene bg house with dissolve
 
     "I kick off my shoes and run to my room as soon as I get home."
+    scene bg room with dissolve
 
     # [Printer SFX] [Fade to black, fade back to Seika's Room BG]
 
@@ -33,6 +37,8 @@ label s0s3:
 
     # [Page flipping SFX] [Transition to Seika Room BG but darker, lights are on]
 
+    scene bg room night
+
     "..."
 
     s "Fuwaaa…."
@@ -47,7 +53,9 @@ label s0s3:
 
     "\"Describe your background in singing, dancing, and any other relevant skills pertaining to idols.\""
 
-    "Mom's taught me a lot about singing, so I can say that I'm pretty confident in that. At the same time, there's no way I could compare to anyone with professional training, so I'll need to practice like crazy if I want to pass the auditions."
+    "Mom's taught me a lot about singing, so I can say that I'm pretty confident in that."
+    
+    "At the same time, there's no way I could compare to anyone with professional training, so I'll need to practice like crazy if I want to pass the auditions."
 
     "As for dancing… I'll do my best to learn!"
 
@@ -57,10 +65,19 @@ label s0s3:
 
     "\"What do you hope to achieve as an idol?\""
 
-    "I…"
-
     "..."
 
+    window hide
+    show black with dissolve
+    hide black with dissolve
+    show black with dissolve
+    hide black with dissolve
+
+    $ renpy.pause()
+
+    show black with Dissolve(1)
+
+    window show
     "... Before I knew it, my exhaustion got the better of me."
 
     pause(0.5)
@@ -69,7 +86,9 @@ label s0s3:
 
     call s0d
 
+    scene bg room
     # [Thudding SFX] [Screen shake]
+    with vpunch
     s "Ack!"
 
     "I find myself awake with my nose planted on my desk."
