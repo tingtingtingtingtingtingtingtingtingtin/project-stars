@@ -1,6 +1,6 @@
 # Season 0 Scene 1: Waking Up
 label s0s1:
-    play audio cicada volume 0.5
+    # play audio cicada volume 0.5
     scene black
     "Everyone is born a star."
     
@@ -132,6 +132,7 @@ label s0s1:
     show text "{b}Season 0{/b}: Summer Dreaming" with Pause(1.5)
     scene black with dissolve
     scene bg shop_district with dissolve
+    play audio cicada volume 0.5
     show natsuha neutral at r 
     show seika neutral at l
     with dissolve
