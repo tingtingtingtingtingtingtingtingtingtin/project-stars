@@ -1,7 +1,7 @@
 image logo = "gui/gamespawn.png"
 
 label splashscreen:
-    play music "title16.wav"
+    play music title
     scene black
     with Pause(1)
 

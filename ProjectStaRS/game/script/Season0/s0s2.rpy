@@ -2,7 +2,7 @@
 
 label s0s2:
     scene bg stage with fade
-    play music starbound2
+    play music starbound
     n "Seika!"
     "I think I hear my name, but it sounds so distant I'm not sure if I'm imagining it or not."
     "All that matters is getting closer."

@@ -1,6 +1,6 @@
 # Season 0 Scene 1: Waking Up
 label s0s1:
-    play music "cicada.mp3" volume 0.5
+    play audio cicada volume 0.5
     scene black
     "Everyone is born a star."
     
