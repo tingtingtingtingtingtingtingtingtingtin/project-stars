@@ -58,6 +58,7 @@ label s0s1:
     scene bg cafe
     show natsuha pout at l
     show seika shock at r
+    play music unplanned_rendezvous
     define n_name = "Fashionable Girl"
     s "Wah!"
     "I see my friend, who's nearly climbed over the table, her face just under a foot away from mine."

@@ -112,6 +112,7 @@ label s0s2:
     n neutral "Yes, I suppose. That doesn't mean she can say all that to you and get away with it."
     s happy "I'm telling you, Natsuha, it's fine! Really, she was so dazzling…"
     show black with moveinright
+    stop music fadeout 1.0
     "We head home together after that."
     "Natsuha and I fill the air with chatter all the way, but I can't remember a thing about what we talked about."
     "The girl's song plays on repeat in my head, her silhouette on those stairs burned into my eyes."
@@ -123,6 +124,7 @@ label s0s2:
     show natsuha neutral noon at r
     show black
     hide black with moveoutleft
+    play music starbound
     s "Hm? What's that?"
     n "What's what?"
     show flier with moveinbottom
