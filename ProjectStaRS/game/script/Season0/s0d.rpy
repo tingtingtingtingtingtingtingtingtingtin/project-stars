@@ -1,4 +1,5 @@
 label s0d:
+    play music dreams
     scene bg spotlight
     centered "Awoken by birds chirping, I open my eyes, greeted by the sun burning into my retinas."
     centered "I instinctively hold up my hand, but the blinding light dances between my fingers and blurs my vision."
@@ -45,6 +46,7 @@ label s0d:
         
     centered "When I finally manage to escape the grasp of the vines, I push the door out."
     centered "I close my eyes and take a deep breath, ready to take the leap of faith."
+    stop music fadeout(1.5)
     scene white with Dissolve(2)
     centered "{color=#000000}{i}I’ll grow my wings too, just like the other birds.{/i}{/color}"
 return

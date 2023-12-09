@@ -3,14 +3,20 @@
 label s0s2:
     scene bg citycenter with fade
     stop music fadeout 2.0
-    play audio crowd
+    play audio crowd volume 0.2
     n "Seika!"
     "I think I hear my name, but it sounds so distant I'm not sure if I'm imagining it or not."
     "All that matters is getting closer."
     s "Woah... is that a stage?"
     "It looks like one, at least, at the top of a set of stairs."
-    "Most people keep walking, but that doesn't mean I'm the only one gathering around the steps." 
-    show m with dissolve
+    "Most people keep walking, but that doesn't mean I'm the only one gathering around the steps."
+    image miyuki:
+        "m.png"
+        zoom 0.2
+    image m_performance:
+        "m_performance.png"
+        zoom 1.45
+    show miyuki with dissolve
     "On stage, the white-haired girl goes about setting up equipment I can't even put a name to with a strangely flat expression on her face."
     s "She looks so cool...!"
     "The girl steps to the center of the stage and taps her mic."
@@ -19,10 +25,10 @@ label s0s2:
     $ m_name = "White-haired Girl"
     m "Ahem."
     "I hear a deep breath, and then..."
-    window hide
-    show m_performance with dissolve
+    stop audio fadeout 1.0
+    scene m_performance with dissolve
     $ renpy.pause(0.5)
-    window show
+    play music "<from 45>music/Shining to a Radiant Stage.wav"
     "She sings."
     "The ambient chatter of the city around me melts away, drowned out by the sound of her voice." 
     "There's a crowd around me, but at that moment, she and I are the only people in the world."
@@ -34,7 +40,10 @@ label s0s2:
     "The last notes of her song seem to hang in the air as she points to the sky one last time and comes to a stop."
     "She holds her final pose, and for a moment, time has frozen."
     window hide
+    stop music fadeout(2.0)
     hide m_performance with dissolve
+    scene citycenter
+    play music starbound
     window show
     "The illusion is broken when she moves again, and the world comes back into existence, the rush of chatter and life washing over me."
     "The late summer heat thaws me from my stupor. When I look around, the crowd around me has dispersed."
@@ -57,14 +66,13 @@ label s0s2:
     show seika sad at left
     with moveinbottom
     s "It's... It's not pity! I really thought it was an amazing performance!"
-    show m:
-        xalign 0.7
+    show miyuki at center
     with move
     m "?!"
     m "What the hell are you doing up here?"
     show seika sad at l
     with move
-    show m at r
+    show miyuki at r
     with move
     m "H-hey, watch the equipment!"
     "I realize I've stepped on stage without thinking."
@@ -91,7 +99,7 @@ label s0s2:
     n "That doesn't matter. You owe my friend an apology."
     m "Like hell I do. She can shove her pity where the sun doesn't shine."
     "The girl, having finished packing up her equipment, slings her bag over her shoulder and stalks off."
-    hide m with moveoutright
+    hide miyuki with moveoutright
     show natsuha at right
     with move
     n "If you keep throwing pity parties you need to stop being surprised when people show up to them!"

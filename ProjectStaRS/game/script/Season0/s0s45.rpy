@@ -39,20 +39,21 @@ label s0s45:
     "Everyone came together to help me find her. They all stayed with me until Mom picked me up."
     "I end up at the foot of a stone staircase, where the donation box is."
     
+    show seika neutral at center
     s "How do I do this again...?"
     "I dig a 100 yen coin from my bag and toss it in."
     "Ring the bell."
     "Clap. Clap."
     "For Natsuha and I… Our success."
 
-    show akina neutral at right
+    show akina neutral at r
     with moveinright
     define a_name = "Shrine Maiden"
     a "Ah, you forgot to bow..."
-    show akina fear
-    with vpunch
-    s "Wah!"
-    a "A-Ah!"
+    show akina fear at right
+    with move
+    s shock "Wah!"
+    a "...!"
 
     show natsuha concern at l
     with moveinleft

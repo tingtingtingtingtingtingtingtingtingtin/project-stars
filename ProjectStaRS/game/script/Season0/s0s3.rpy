@@ -23,10 +23,11 @@ label s0s3:
     "\"What is your name?\""
 
     # [Writing SFX] 
-    play audio write
+    play audio write volume(0.2)
 
     "\"Sakigawa... Seika.\""
     
+    stop audio
     "One done, few more pages of questions to go!"
 
     "..."
