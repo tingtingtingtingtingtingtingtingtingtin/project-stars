@@ -1,4 +1,5 @@
-label s0s5: 
+label s0s5:
+    scene bg room night with Dissolve(2.5)
 
     "These last few days, the audition was the only thing on my mind. The day immediately after, I could hardly catch a wink of sleep waiting for that phone call."
 
@@ -28,6 +29,8 @@ label s0s5:
     s "That's alright, thank you for the opportunity!"
 
     #[Seika's Phone] #[Ringing SFX] #[Phone sprite] #[Music stops, silence]
+    play audio vibrate
+    show phone unknown
     with hpunch
     phone "Bzz! Bzz! Bzz!"
 
@@ -38,7 +41,10 @@ label s0s5:
     "I jump out of bed to get my phone. A few of my plushies roll off the bed amidst my scrambling, but I can pick those up later."
 
     "I answer my phone and press it to my ear, too afraid to look at it. I hear a dull beep as I pick up."
-
+    
+    hide phone unknown
+    show phone unknown_call
+    with dissolve
     #[Seika]
     s "H-Hello? This is Seika, from the audition…"
 
@@ -46,13 +52,16 @@ label s0s5:
     "My heart is hammering in my chest. Time slows to a crawl, and it feels like forever before I finally hear a voice."
 
     "..."
-
+    
     #[???]
     unknown "Hello there! Congratulations, you've been selected as the winner for our free uPhone 23 giveaway!"
     unknown "You have only 2 hours, and time is ticking, so hurry! To claim your prize, simply tell us your name and credit card information after the beep! Terms and conditions apply!"
 
     #[Seika]
     s "I-I'm not interested, sorry!"
+    
+    hide phone unknown_call
+    with dissolve
 
     #[-] #[Night theme resumes]
     "I quickly hang up and breathe a heavy sigh. Another scam call, huh?"
@@ -68,10 +77,12 @@ label s0s5:
     "\"Nacchan! When… are… you… free?\""
     
     #[Seika's Phone] #[Buzzing SFX] #[Music stops again]
-    with hpunch
+    play audio vibrate
+    show phone
     phone "Bzz! Bzz! Bzz!"
 
     #[Seika] #[Screen shaking, dropping SFX] #[Phone sprite disappears]
+    hide phone
     with vpunch
     s "AH!!!!"
 
@@ -82,13 +93,23 @@ label s0s5:
     s "!!!!!"
 
     #[-] #[Phone sprite reappears, this time cracked]
+    show phone broke
+    with moveinbottom
     "I pick up my phone again to see a large crack in it."
 
-    "But that isn't what surprises me, it's the name on the caller screen – Horizon Productions."
+    "But that isn't what surprises me, it's the name on the caller screen."
+    
+    hide phone broke
+    show phone hp
+    with Dissolve(1)
 
+    "My audition results!?"
     "I answer quickly, but before I can speak, the voice on the other side starts."
 
     #[???] #[Phone sprite and BG disappear, black BG] #[Music stops]
+    hide phone hp
+    show phone hp_call
+    with dissolve
     $ t_name = "Serious Voice"
     t "Is this Seika?"
 
@@ -119,8 +140,6 @@ label s0s5:
     #[-]
     "Her voice was firm and honestly a little intimidating, but I managed to stand my ground. These terms were no stranger to me, all thanks to my preparations."
 
-    "But then she says something that strikes me off guard."
-
     #[Tsuki]
     t "You'll be expected to work like you've never worked before, to show up to practice rain or shine."
     
@@ -134,19 +153,18 @@ label s0s5:
     
     t "Take it from my experience."
 
-    #[Seika]
-    s "I…"
-
     #[-]
-    "Her words shake me to my very core."
+    "But then... those words strike me off guard."
 
     "For a moment, it's like I've caught a glimpse of something darker, something that makes me question: What am I getting myself into?"
 
     "I don't understand why, but she's giving me a chance to back out while I still can."
 
+    "I need to choose wisely."
+
     #[Player choice:]
     menu:
-        "I need to choose wisely."
+        "What should I do?"
         "Accept her terms":
             pass
         "Back out":
@@ -189,6 +207,9 @@ label s0s5:
     t "... Goodbye."
 
     #[Beeping noise]
+    hide phone hp_call
+    show phone hp_hang
+    with dissolve
     "Tsuki hangs up."
     
     "I'm confused by her parting words, but I think I made a strong impression, at least."

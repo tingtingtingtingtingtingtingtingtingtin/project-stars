@@ -1,11 +1,10 @@
 label s0s3:
     # [Scene opens up in the entrance of Seika's home]
-    window hide
-    window show
-    scene bg house with dissolve
+    scene black with dissolve
+    "..."
 
     "I kick off my shoes and run to my room as soon as I get home."
-    scene bg room with dissolve
+    scene bg room noon with dissolve
 
     # [Printer SFX] [Fade to black, fade back to Seika's Room BG]
 
@@ -24,8 +23,11 @@ label s0s3:
     "\"What is your name?\""
 
     # [Writing SFX] 
+    play audio write
 
-    "\"Sakigawa Seika.\""
+    "\"Sakigawa... Seika.\""
+    
+    "One done, few more pages of questions to go!"
 
     "..."
 
@@ -37,7 +39,7 @@ label s0s3:
 
     # [Page flipping SFX] [Transition to Seika Room BG but darker, lights are on]
 
-    scene bg room night
+    scene bg room night with dissolve
 
     "..."
 
@@ -72,9 +74,6 @@ label s0s3:
     hide black with dissolve
     show black with dissolve
     hide black with dissolve
-
-    $ renpy.pause()
-
     show black with Dissolve(1)
 
     window show
@@ -86,7 +85,7 @@ label s0s3:
 
     call s0d
 
-    scene bg room
+    scene bg room with vpunch
     # [Thudding SFX] [Screen shake]
     with vpunch
     s "Ack!"
@@ -102,7 +101,7 @@ label s0s3:
 
     "I can't believe I got it all wrinkled like this. I didn't drool on it, did I?"
 
-    mom "Seika honey, is that you? Can you come down to help me with the laundry?"
+    mom "Seika, honey, is that you? Can you come down to help me with the laundry?"
 
     s "C-Coming!"
 return

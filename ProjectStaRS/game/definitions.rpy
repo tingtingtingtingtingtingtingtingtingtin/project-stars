@@ -28,16 +28,55 @@ transform r:
     ypos 1.0
 
 ## BGs
-image black = "#000000"
-image bg crowd = "bg/crowd.png"
+image white = "#ffffff"
 image bg stage = "bg/stage.png"
 image bg cafe = "bg/cafe.png"
 image bg citycrossing = "bg/citycrossing.png"
+image bg residential = "bg/residential.png"
 image bg shrine = "bg/shrine.png"
 image bg school = "bg/school.png"
+image bg room = "bg/room.png"
+image bg room noon = "bg/room noon.png"
+image bg room night = "bg/room night.png"
+image bg shop district = "bg/shop district.png"
+image bg sky noon = "bg/sky noon.png"
+image bg star river 1 = "bg/star river/1.png"
+image bg star river 2 = "bg/star river/2.png"
+image bg star river 3 = "bg/star river/3.png"
+image bg star river 4 = "bg/star river/4.png"
+image bg star river 5 = "bg/star river/5.png"
+image bg spotlight = "bg/spotlight.png"
+image bg citycenter = "bg/citycenter.png"
 
 ## Sprites
-image seika happy = "seika/happy.png"
-image seika neutral = "seika/neutral.png"
-image seika sad = "seika/sad.png"
-image seika shock = "seika/shock.png"
+image seika happy = "sprites/seika/happy.png"
+image seika neutral = "sprites/seika/neutral.png"
+image seika sad = "sprites/seika/sad.png"
+image seika shock = "sprites/seika/shock.png"
+image akina neutral = "sprites/akina/neutral.png"
+image akina happy = "sprites/akina/happy.png"
+image akina fear = "sprites/akina/fear.png"
+image natsuha neutral: 
+    "sprites/natsuha/neutral.png"
+    zoom 0.52
+image natsuha concern:
+    "sprites/natsuha/concern.png"
+    zoom 0.52
+image natsuha happy:
+    "sprites/natsuha/happy.png"
+    zoom 0.52
+image natsuha shock:
+    "sprites/natsuha/shock.png"
+    zoom 0.52
+image natsuha pout:
+    "sprites/natsuha/pout.png"
+    zoom 0.52
+
+## Props
+image phone = "props/phone/off.png"
+image phone broke = "props/phone/broke.png"
+image phone hp = "props/phone/hp.png"
+image phone hp_hang = "props/phone/hp hang.png"
+image phone hp_call = "props/phone/hp call.png"
+image phone unknown = "props/phone/unknown.png"
+image phone unknown_call = "props/phone/unknown call.png"

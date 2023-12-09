@@ -26,6 +26,8 @@ label s0end:
     t "Goodbye."
 
     #[-]
+    hide phone hp_call
+    with dissolve
     "The call ended, and everything was silent again. I let go of the breath I didn't even know I was holding."
 
     "I glanced over at my bed, where my plushies had scattered all around the floor."
@@ -33,30 +35,47 @@ label s0end:
     "Time to pick everything up."
 
     "..."
+    scene black with fade
 
-    "I decided to retake the medical school exam."
+    centered "I decided to retake the medical school exam."
 
-    "For the next few months, I threw myself into my studies, cooping myself up in my room for hours on end."
+    centered "For the next few months, I threw myself into my studies, cooping myself up in my room for hours on end."
     
-    "The whole process was grueling, and the concepts were really difficult, but putting my all into this… just felt right." 
-
-    "Fortunately, I passed. Funnily enough, practicing nonstop for my audition made me a better student. Thanks again, Natsuha."
-
-    "Ah. Speaking of, I realized a bit late that I'd forgotten to get back to the producer about my decision."
+    centered "The whole process was grueling, and the concepts were really difficult, but..."
     
-    "Although, she never got back to me in the end, so I guess she must've found a replacement for me."
+    centered "Putting my all into something… just felt right." 
 
-    "Anyways, seeing all the news and controversy about idols recently has made me rather glad I didn't take that leap of faith."
+    centered "Fortunately, I passed."
     
-    "Really feels like I dodged a bullet there, don't you think?"
+    centered "Funnily enough, practicing nonstop for my audition made me a better student."
+    
+    centered "Thanks again, Natsuha."
+
+    centered "Ah. Speaking of, I realized a bit late that I'd forgotten to get back to the producer about my decision."
+    
+    centered "Although, she never got back to me in the end, so..."
+    
+    centered "I guess she must've found a replacement for me."
+
+    centered "Anyways, seeing all the news and controversy about idols recently has made me rather glad I didn't take that leap of faith."
+    
+    centered "Really feels like I dodged a bullet there, don't you think?"
 
     #[Young Girl Patient] #[Hospital BG, TV with Natsuha in her idol uniform on a stage]
-    ygp "But, Dr. Kawasaki… Don't you ever long to be on one of those big stages, surrounded by lights and people?"
-
+    image bg hospital_beds = "bg/hospital beds.png"
+    
+    show bg spotlight with Dissolve(1.5)
+    ygp "But, Dr. Kawasaki…"
+    
+    ygp "Don't you ever long to be on one of those big stages, surrounded by lights and people?"
+    
+    scene bg hospital_beds with Dissolve(1.5)
     ygp "It all seems so lovely..."
 
     #[Seika]
-    s "Maybe so, but watching them from the comfort of your own home, supporting the dreams of your beloved idols on their road to the top… Isn't that its own joy?"
+    s "Maybe so, but watching them from the comfort of your own home, supporting the dreams of your beloved idols on their road to the top…"
+    
+    s "Isn't that its own joy?"
 
     s "Besides, seeing the smiles of my patients is the greatest joy of them all."
 
@@ -82,7 +101,9 @@ label s0end:
     #[-]
     "I cross my arms triumphantly to elicit a giggle from my patient, causing my own heart to swell in happiness."
 
-    "Laughter truly is the best medicine; the sound my patients make when they laugh, the way the muscles around their eyes contract – I've memorized them all."
+    "Laughter truly is the best medicine."
+    
+    "The sound my patients make when they laugh, the way the muscles around their eyes contract – I've memorized them all."
     
     "This is my dream job, and no amount of what-if-buts can ever change that."
 
@@ -97,7 +118,9 @@ label s0end:
     #[Kaori]
     kaori "D-Dr. Kawasaki? Are you crying…?"
 
+    show black with Dissolve(1.5)
     #[-]
-    "Still, as I watch my friend begin her next song, I can't help but feel like I missed out on something big."
+    centered "Still, as I watch my friend begin her next song..."
+    centered "I can't help but feel like I missed out on something big."
 
     return

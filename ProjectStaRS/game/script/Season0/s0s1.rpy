@@ -1,74 +1,101 @@
 # Season 0 Scene 1: Waking Up
 label s0s1:
     # play audio cicada volume 0.5
-    scene black
-    "Everyone is born a star."
+    scene bg spotlight with dissolve
+    centered "Everyone is born a star."
     
-    "Some twinkle brighter than others, but all are stars in their own right."
-
+    centered "Some twinkle brighter than others, but all are stars in their own right."
+    show bg star river 1 with dissolve
     "Eight billion stars populate this beautiful planet we call home, and infinitely many more spread across the cosmos and paint our night sky."
 
     "Every speck of light, no matter how tiny, flows downstream in the direction that our universe, Fate, intended."
 
-    "And then there's me."
+    "And then..."
+    
+    scene bg star river 2 with dissolve
+    "There's me."
+    
+    show bg star river 3
+    "Adrift in this sea of stars."
+    
+    show bg star river 4
+    "Stranded, without a direction to call my own."
 
-    "I've made a full nineteen laps around the Sun. I've experienced my heartfelt graduation. I've watched my childhood come and go."
-
-    "For me, adulthood is just beginning. By now, my direction should be clear. My path should be paved for me."
-
-    "And yet, I remain adrift in this sea of stars."
+    show bg star river 5 with Dissolve(1.5)
 
     "Before I knew it, it was August. A whole four months have gone by since my graduation."
 
-    "When I opened the gates to the great beyond, there was no big opportunity waiting for me. Job offers and higher education didn't greet me out the front door like they did for others."
+    "Just the other day, I tallied my nineteenth lap around the Sun."
+
+    "A full nineteen years of… me."
+
+    "In that time, I've watched my childhood come and go. They were the happiest years of my life."
+
+    "For me, adulthood is just beginning. By now, my direction should be clear. My path should be paved for me."
+
+    "And yet, when I opened the gates to the great beyond, there was no big opportunity waiting for me. Job offers and higher education didn't greet me out the front door like they did for others."
 
     "Instead, I'm stuck floating in place, with nothing but the threat of eventual death motivating my next steps."
 
-    "When I look at it that way, I can't help but get a little worried."
+    "... That's a bit grim, isn't it? When I look at it that way, I can't help but get a little worried."
 
     "They say one's future is determined by their environment – that all liquids take the shape of their containers."
 
-    "Some people grow up knowing exactly what they want to do with their lives. Some inherit a family business, others have their entire life figured out before entering college."
+    "Some people grow up knowing exactly what they want to do with their lives. Some inherit a family business, others have everything from their college to their retirement planned out."
 
-    "But… growing up, I didn't have a set path."
+    "But, growing up, I didn't have a set path."
     
-    "Mom made sure that I would always have a choice. She'd never force me to do anything I didn't want to. I'm forever grateful for that, and yet…"
+    "Mom made sure that I would always have a choice. She'd never force me to do anything I didn't want to."
+    
+    "I'm forever grateful for that, and yet…"
+    
+    window hide
+    scene black with dissolve
 
-    "I'm lost."
+    centered "I'm lost."
 
-    "…"
+    centered "…"
 
-    unknown "Seika..."
+    scene bg spotlight with Dissolve(1)
 
-    "My name."
+    centered "Seika..."
 
-    "Names are important. Everyone has one, after all."
+    scene black with dissolve
+    centered "My name."
 
-    unknown "Seika."
+    scene bg spotlight with Dissolve(1)
 
-    "\"Star song\". My mom's first gift to me."
+    centered "Seika."
 
-    "To me, my name holds a lot of significance."
+    scene black with dissolve
 
-    "From the moment I was born, I was–"
+    centered "\"Star song\". My mom's first gift to me."
 
-    unknown "{size=*1.5}Seika!{/size}"
-    with vpunch
+    centered "To me, my name holds a lot of significance."
+
+    centered "From the moment I was born, I've always wanted to live up to–"
+    
+    scene bg spotlight
+    centered "{size=*1.5}Seika!{/size}"
+    window auto
     
     scene bg cafe
-    show natsuha pout at l
+    show natsuha pout at center
     show seika shock at r
+    with vpunch
     play music unplanned_rendezvous
     define n_name = "Fashionable Girl"
     s "Wah!"
     "I see my friend, who's nearly climbed over the table, her face just under a foot away from mine."
     "She looks at me with a furrowed brow, examining my face like a worried but curious puppy."
-
+    
+    show natsuha pout at l 
+    with move
     n "Geez Seika, you're always spacin' out when I'm telling a story."
     n "Am I really that boring?"
     s sad "Eh? S-Sorry... I just have a few things on my mind, honest!"
     n happy "Ehehe, just messin' with ya."
-    n pout "Anyways, like I was saying, the old dude started yellin' at me! Said I took too long and that his beef bowl got cold. I was only, like, five minutes late!"
+    n neutral "Anyways, like I was saying, the old dude started yellin' at me! Said I took too long and that his beef bowl got cold. I was only, like, five minutes late!"
     show seika neutral
     "This is Natsuha. She's been my friend since middle school, and we've been joined at the hip ever since." 
     "For almost as long as I've known her, she's been working all the most random part-time jobs I've never heard of."
@@ -80,18 +107,21 @@ label s0s1:
     n neutral "Earth to Seika? You're doing that spacin' out thing again."
     s shock "Ah, sorry! Bad habit."
     s neutral "So we're going to the mall after lunch then?"
-    n "Yes!{w} Wait, no. You're not worming your way out of this one, Seika. You've got something on your mind and I wanna hear it."
-    n "Ahh, could it be..."
-    n happy "... you're in L-U-V?"
+    n happy "Yes!"
+    n neutral "Wait, no."
+    n happy "You're not worming your way out of this one, Seika! You've got something on your mind and I wanna hear it."
+    n shock "Ahh, could it be..."
+    n happy "... you're in LUV?"
     s shock "What!? No!"
-    n pout "Ah, booo. Like seriously though, what's up?"
+    n pout "Ah, booo."
+    n neutral "Like seriously though, what's up?"
     s sad "I guess I feel a little lost right now? All of our school friends are either at university or working."
     s "You're doing, what, three jobs now? Seeing you, I feel like I should be doing more."
     n neutral "Yah, but all that's my thing. I know I make it sound fun, but you don't hafta do my thing."
     n "Why don't you find your own thing? Something you wanna do, y'know?"
     s sad "But, I don't know, I just feel like I wasted the time in between graduation and now."
-    n "Aww, Seika, don't say that! No such thing as wasted time, dummy." 
-    n happy "Ooh, what about your med school exam? You told me you were gonna take it right before graduation. How'd ya do?"
+    n happy "Aww, Seika, don't say that! No such thing as wasted time, dummy." 
+    n neutral "Ooh, what about your med school exam? You told me you were gonna take it right before graduation. How'd ya do?"
     s "..."
     n concern "... Seika?"
     s sad "I was a few marks short..."
@@ -107,7 +137,7 @@ label s0s1:
     "Like... being a doctor, or social worker, or teacher."
     "That's right, helping people is how I wanted to make a mark on the world."
     s neutral "Besides, I'm volunteering at the hospital. Maybe I'll find that spark again, you know?"
-    s "Oh, or maybe I'll discover a new path to take!"
+    s "Or... or maybe I'll discover a new path to take."
     n happy "I'm sure you'll find something! You love dreaming big, something'll have to stick."
     s "Yeah, and maybe I don't need to stick to medicine either. If I want to stick to my dream of helping people, I need to keep my mind open to whatever life throws at me."
     s "Say, you're always hunting for jobs, Natsuha. Do you know of any work that I can do?"
@@ -117,9 +147,9 @@ label s0s1:
     n "Me? Nah, not really."
     s "But Natsuha, you're one of the coolest people I know! You're talented and fashionable and hardworking!"
     s "With your looks and fashion sense you could be a model or a fashion designer! Doesn't that sound cool?"
-    n "Mmm, it kinda does."
+    n concern "Mmm, it kinda does."
     s happy "Imagine that, Natsuha! I can already see you on the cover of a flashy, trendy magazine."
-    n concern "It sounds pretty cool and all, but don't you go worrying about me, Seika."
+    n "It sounds pretty cool and all, but don't you go worrying about me, Seika."
     n happy "You just focus on yourself and what you wanna do, and I'll be supporting you. Hundred-ten percent!"
     s neutral "Yeah, sorry again for rambling. Chatting with you gave me all these ideas and…{w} I feel a little hopeful about things again."
     n "Chill, you're gonna make me blush!"
@@ -128,14 +158,21 @@ label s0s1:
     n "Ah don't worry about it, I gots me a little bit of spending money from working overtime this summer."
     n happy "Plus, we don't see each other often, so I don't mind splurging a bit!"
     s happy "Alright, I won't say no to free sweets!"
+    stop music fadeout 2.0
+    scene bg spotlight with dissolve
+    show text "{b}Season 0{/b}: Summer Dreaming"
+    with dissolve
+    $ renpy.pause()
     scene black with dissolve
-    show text "{b}Season 0{/b}: Summer Dreaming" with Pause(1.5)
-    scene black with dissolve
-    scene bg shop_district with dissolve
-    play audio cicada volume 0.5
+    scene bg shop district with dissolve
+    play music starbound
+    # play audio cicada volume 0.2
+    "After we paid for our respective drinks, we went to the crepe shop and decided to share one together."
+    "Afterwards, Natsuha suggested we walk off the calories and explore the city, taking me to the shopping district to do some window shopping."
+    "As the two of us walk down the street, Natsuha occasionally pointed and directed me to a shop window to look at pretty dresses."
     show natsuha neutral at r 
     show seika neutral at l
-    with dissolve
+    with moveinright
     n "Maaaan, that one's cute!"
     n concern "But geez, look at that price tag. Maybe someda–"
     show natsuha at center
@@ -146,7 +183,7 @@ label s0s1:
     s "You okay, Natsuha?"
     show natsuha at r
     with move
-    n "I'm fine, but people are so rude! What are they in such a hurry for?"
+    n pout "I'm fine, but people are so rude! What are they in such a hurry for?"
     show seika sad at center
     with move
     n concern "... Uh, Seika?" 
@@ -154,6 +191,7 @@ label s0s1:
     hide seika with moveoutright
     n shock "Seika? Hey, where are you goin'? Seika!"
     hide natsuha with moveoutright
+    stop sound fadeout 1.0
 
     show black with moveinright
     with Pause(0.5)

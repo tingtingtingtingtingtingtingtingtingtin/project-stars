@@ -1,8 +1,9 @@
 # Season 0 Scene 2
 
 label s0s2:
-    scene bg stage with fade
-    play music starbound
+    scene bg citycenter with fade
+    stop music fadeout 2.0
+    play audio crowd
     n "Seika!"
     "I think I hear my name, but it sounds so distant I'm not sure if I'm imagining it or not."
     "All that matters is getting closer."
@@ -116,12 +117,12 @@ label s0s2:
     "We head home together after that."
     "Natsuha and I fill the air with chatter all the way, but I can't remember a thing about what we talked about."
     "The girl's song plays on repeat in my head, her silhouette on those stairs burned into my eyes."
-    image bg citycrossing noon = im.MatrixColor("images/bg/citycrossing.png", im.matrix.tint(.85,.60,.50)*im.matrix.brightness(0.10))
-    image seika neutral noon = im.MatrixColor("images/seika/neutral.png", im.matrix.tint(.85,.60,.50)*im.matrix.brightness(0.10))
+    # image bg citycrossing noon = im.MatrixColor("images/bg/citycrossing.png", im.matrix.tint(.85,.60,.50)*im.matrix.brightness(0.10))
+    # image seika neutral noon = im.MatrixColor("images/seika/neutral.png", im.matrix.tint(.85,.60,.50)*im.matrix.brightness(0.10))
     # image natsuha neutral noon = im.MatrixColor("images/natsuha/neutral.png", im.matrix.tint(.85,.60,.50)*im.matrix.brightness(0.20))
-    scene bg citycrossing noon
-    show seika neutral noon at l
-    show natsuha neutral noon at r
+    scene bg citycrossing
+    show seika neutral at l
+    show natsuha neutral at r
     show black
     hide black with moveoutleft
     play music starbound
@@ -168,7 +169,7 @@ label s0s2:
     n "Uh, that's not..."
     s "I really, really want to try it, Nacchan! And you should too! With you at my side, I won't make too many dumb mistakes!"
     n concern "..."
-    scene bg sky noon
+    scene bg sky noon with dissolve
     n "....."
     n "Here, have it."
     "Natsuha uncrumples the flyer and hands it to me."
