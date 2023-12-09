@@ -1,6 +1,7 @@
 # Season 0 Scene 1: Waking Up
 label s0s1:
     # play audio cicada volume 0.5
+    play music promise
     scene black
     "Everyone is born a star."
     
@@ -132,7 +133,6 @@ label s0s1:
     show text "{b}Season 0{/b}: Summer Dreaming" with Pause(1.5)
     scene black with dissolve
     scene bg shop_district with dissolve
-    play audio cicada volume 0.5
     show natsuha neutral at r 
     show seika neutral at l
     with dissolve
@@ -158,9 +158,11 @@ label s0s1:
     show black with moveinright
     with Pause(0.5)
     scene bg citycrossing
+    play audio cicada volume 0.5
     show black
     hide black with moveoutleft
     "I turn the corner and accidentally bump into the back of a stranger."
+    stop audio fadeout 1.0
     "I apologize, but they seem to be too fixated elsewhere to notice."
     "Taking a deep breath, I swim my way through the sea of people to see what they're all looking at."
     return
